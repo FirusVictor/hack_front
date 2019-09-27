@@ -1,0 +1,52 @@
+$colors: (
+        primary:#F61067,
+        second-100:#5E239D,
+        second-200:#3A0475,
+        second-300:#30124E,
+        second-400:#150433,
+        blue-2:#00F0B5,
+        white:#FCFCFC,
+        white-1:#F4F4ED,
+        blue-1:#6DECAF,
+        gray-1:#30233D,
+        gray-2:#776C82,
+        gray-3:#9B94A3,
+        err:#F0002B,
+        succ:#10F65E,
+        war:#F67110,
+        info:#00A8F0
+);
+
+@function color($color, $opacity : 1) {
+  @if (map_has_key($colors, $color)) {
+    $color: map-get($colors, $color)
+  } @else {
+    @if type-of($color) != color {
+      @error "Invalid color name: `#{$color}`.";
+    }
+  }
+  @return scale-color($color, $alpha: $opacity*100%-100%);
+}
+
+@each $name,$val in $colors{
+  .bg{
+    &-#{$name}{
+      background-color: color($val) !important;
+    }
+    &-hover-#{$name}{
+      &:hover{
+        background-color: color($val) !important;
+      }
+    }
+  }
+  .color{
+    &-#{$name}{
+      color: color($val) !important;
+    }
+    &-hover-#{$name}{
+      &:hover{
+        color: color($val) !important;
+      }
+    }
+  }
+}
