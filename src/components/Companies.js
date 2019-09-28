@@ -1,44 +1,40 @@
 import React, {Component} from 'react'
 import Header from './Header'
-import avatar from '../img/def_avatar.png'
+import education from '../assets/education.svg'
 import axios from 'axios'
 import {Link} from "react-router-dom";
 
-export default class Users extends Component {
+export default class Companies extends Component {
     constructor(props) {
         super(props);
-        this.state = {users:[]}
+        this.state = {companies:[]}
     }
 
     componentDidMount() {
         var self = this;
-        axios.get('http://localhost:8000/users')
+        axios.get('http://localhost:8000/company')
             .then(res => {
-                self.setState({users:res.data.data})
+                self.setState({companies:res.data.data})
             });
     }
 
     render() {
-        let cards = this.state.users.map((val,key)=>{
-            return (<Link to={'/users/'+val.id} key={key} className="card user">
+        let cards = this.state.companies.map((val,key)=>{
+            return (<Link to={'/company/'+val.id} key={key} className="card company">
                 <header>
                     <div className="avatar">
-                        <img src={avatar} alt=""/>
+                        <img src={education} alt=""/>
                     </div>
                     <div className="title">
-                        {val.l_name} {val.f_name} {val.m_name}
+                        {val.name}
                     </div>
                 </header>
-                <div className="content">
-                    <h3>LobsterLab</h3>
-                    <p>Full-stack программист</p>
-                </div>
             </Link>);
         });
         return (
             <main>
-                <div className={'users-page'}>
-                    <Header active={0}/>
+                <div className={'univers-page'}>
+                    <Header active={1}/>
                     <div className="wrapper_1080">
                         {cards}
                     </div>

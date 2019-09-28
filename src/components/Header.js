@@ -1,6 +1,9 @@
 import React, {Component} from 'react'
 import {Link} from 'react-router-dom'
 import logo from '../assets/logo.png';
+import avatar from '../img/def_avatar.png'
+import search from '../assets/search.svg'
+
 
 export default class Header extends Component {
     render() {
@@ -8,10 +11,15 @@ export default class Header extends Component {
         links.push(['/users','Участники']);
         links.push(['/university','Университеты']);
         links.push(['/company','Компании']);
+        links.push(['/events','Мероприятия']);
+        links.push(['/education','Курсы']);
         let li = links.map((key, val) => {
-            return (<li key={val} className={this.props.active === val ? "active": ""}>
-                <Link to={key[0]}>{key[1]}</Link>
-            </li>);
+            return (
+                <Link className={this.props.active === val ? "active": ""} key={val} to={key[0]}>
+                    <li>
+                    {key[1]}
+                    </li>
+                </Link>);
         });
         return (
             <div className={'main-header'}>
@@ -22,7 +30,16 @@ export default class Header extends Component {
                     <ul className="nav">
                         {li}
                     </ul>
-                    <div className="profile"></div>
+                    <div className="search">
+                        <img src={search} alt=""/>
+
+                    </div>
+                    <div className="profile">
+                        <div className="avatar">
+                            <img src={avatar} alt=""/>
+                        </div>
+                        ФВ
+                    </div>
                 </div>
             </div>
         );
