@@ -11,106 +11,56 @@ export default class Event extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            university_id: this.props.match.params.id,
+            event_id: this.props.match.params.id,
             activeNav: 0,
-            university:{}
+            event:{organizations:[]}
         };
     }
 
     componentDidMount() {
         let self =this;
-        axios.get('http://localhost:8000/university/'+self.state.university_id)
+        axios.get('http://localhost:8000/events/'+self.state.event_id)
             .then(res=>{
-                self.setState({university:res.data.data})
+                self.setState({event:res.data.data})
             })
-
     }
     render() {
+        let organizators = this.state.event.organizations.map((val,key)=>{
+            return (<h4 className={'sponsor'}><Link to={'/'+val.type+'/'+val._id}>{val.name}</Link></h4>);
+        });
         return (
             <main>
-                <div className={'user-page univer-page'}>
+                <div className={'user-page event-page'}>
                     <Header/>
                     <div className='wrapper_1080'>
                         <div className="main">
                             <div className="main-info card">
                                 <div className="avatar">
-                                    <img src={education} alt=""/>
+                                    <img src={process.env.PUBLIC_URL + '/'+ this.state.event.logo} alt=""/>
                                 </div>
                                 <div className='content'>
-                                    <span className={'id'}>id: {this.state.university_id}</span>
-                                    <h3>{this.state.university.name}</h3>
-                                    <h5>Адрес:</h5>
-                                    <p>{this.state.university.city}, {this.state.university.street}, {this.state.university.address}</p>
-                                    <h5>Официальный сайт: </h5>
-                                    <a target={'_blank'} href={this.state.university.site}>{this.state.university.site}</a>
-                                    <p></p>
+                                    <span className={'id'}>id: {this.state.event_id}</span>
+                                    <h3>{this.state.event.name}</h3>
+                                    <h5>Сроки проведения:</h5>
+                                    <p>{this.state.event.date_start} - {this.state.event.date_end}</p>
+                                    <h5>Тип мероприятия: </h5>
+                                    <p>{this.state.event.type}</p>
                                 </div>
                                 <div className="b-edit-profile">
                                     <img src={icoEdit} alt=""/>
                                 </div>
                             </div>
 
-                            <div className="card stat circle">
-                                <div className="col">
-                                    <div className="circle primary">
-                                        <div className="content">12345</div>
-                                    </div>
-                                    <h3>Выпускников</h3>
-                                </div>
-                                <div className="col">
-                                    <div className="circle primary">
-                                        <div className="content">12345</div>
-                                    </div>
-                                    <h3>Проведено мероприятий</h3>
-                                </div>
-                                <div className="col">
-                                    <div className="circle primary">
-                                        <div className="content">12345</div>
-                                    </div>
-                                    <h3>Курсов</h3>
-                                </div>
+                            <div className="card event">
+                                <h3>Спонсоры</h3>
+                                {organizators}
+                            </div>
+                            <div className="card event">
+                                <h3>Информация о проведении</h3>
+                                <p>Россия, будучи в составе движения WorldSkills International с мая 2012 года, активно продвигает его ценности и уделяет особое внимание популяризации рабочих профессий среди молодого поколения, а также способствует повышению стандартов профессионального образования. Движение WorldSkills Russia охватывает все 85 регионов страны и является одним из приоритетных проектов в сфере подготовки кадров.</p>
+                                <p>Столица Республики Татарстан впервые приняла мировой чемпионат по профессиональному мастерству по стандартам «Ворлдскиллс». Тысячелетний город, центр прогрессивного региона, место пересечения культурных традиций Востока и Запада, организатор крупных международных мероприятий, Казань стала центром притяжения молодых профессионалов всего мира.</p>
                             </div>
 
-                            <div className="card rate">
-                                <h3>Топ выпускников {this.state.university.name}</h3>
-                                <div className="users">
-                                    <a href={'/users/1'} className="card">
-                                        <img src={avatar} alt=""/>
-                                        <div className={'content'}>
-                                            <h6>Фирус Виктор Александрович</h6>
-                                            <p>Full-stack прграммист ( LobsterLab )</p>
-                                        </div>
-                                    </a>
-                                    <a href={'/users/1'} className="card">
-                                        <img src={avatar} alt=""/>
-                                        <div className={'content'}>
-                                            <h6>Фирус Виктор Александрович</h6>
-                                            <p>Full-stack прграммист ( LobsterLab )</p>
-                                        </div>
-                                    </a>
-                                    <a href={'/users/1'} className="card">
-                                        <img src={avatar} alt=""/>
-                                        <div className={'content'}>
-                                            <h6>Фирус Виктор Александрович</h6>
-                                            <p>Full-stack прграммист ( LobsterLab )</p>
-                                        </div>
-                                    </a>
-                                    <a href={'/users/1'} className="card">
-                                        <img src={avatar} alt=""/>
-                                        <div className={'content'}>
-                                            <h6>Фирус Виктор Александрович</h6>
-                                            <p>Full-stack прграммист ( LobsterLab )</p>
-                                        </div>
-                                    </a>
-                                    <a href={'/users/1'} className="card">
-                                        <img src={avatar} alt=""/>
-                                        <div className={'content'}>
-                                            <h6>Фирус Виктор Александрович</h6>
-                                            <p>Full-stack прграммист ( LobsterLab )</p>
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

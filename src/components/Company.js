@@ -17,6 +17,7 @@ export default class Univer extends Component {
                 street:'',
                 address:'',
                 site:'',
+                vacant:[],
             },
             company_id: this.props.match.params.id,
             activeNav: 0
@@ -32,6 +33,13 @@ export default class Univer extends Component {
 
     }
     render() {
+        let vacant = this.state.company.vacant.map((val,key)=>{
+            return (<div className={'vacant'}>
+                <h4>{val}</h4>
+                <p>Описание Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, dignissimos dolorem doloribus ea ipsam mollitia omnis quibusdam quis quod reprehenderit? Consectetur corporis expedita facilis id mollitia obcaecati similique, tempore voluptas?</p>
+                <a className={'compet'} href="#">Компетенции вакансии</a>
+            </div>);
+        });
         return (
             <main>
                 <div className={'user-page univer-page'}>
@@ -49,15 +57,15 @@ export default class Univer extends Component {
                                     <p>{this.state.company.city}, {this.state.company.street}, {this.state.company.address}</p>
                                     <h5>Официальный сайт: </h5>
                                     <a target={'_blank'} href={this.state.company.site}>{this.state.company.site}</a>
-                                    <p></p>
                                 </div>
                                 <div className="b-edit-profile">
                                     <img src={icoEdit} alt=""/>
                                 </div>
                             </div>
 
-                            <div className="card stat-univer">
+                            <div className="card event">
                                 <h3>Открытые вакансии</h3>
+                                {vacant}
                             </div>
                         </div>
                     </div>

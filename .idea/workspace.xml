@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="801b7d71-47b5-46b7-b3fb-585ea326b397" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Event.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Event.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +106,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569598097552</updated>
       <workItem from="1569598106599" duration="47166000" />
-      <workItem from="1569711006082" duration="22951000" />
+      <workItem from="1569711006082" duration="25652000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1569599450247</created>
@@ -148,7 +150,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569746309942</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fix gitignore">
+      <created>1569746331371</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1569746331371</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +184,7 @@
     <MESSAGE value="checkpoint" />
     <MESSAGE value="checkpoint 10.46" />
     <MESSAGE value="add events page" />
-    <option name="LAST_COMMIT_MESSAGE" value="add events page" />
+    <MESSAGE value="fix gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix gitignore" />
   </component>
 </project>
