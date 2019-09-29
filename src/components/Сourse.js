@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 import dateFormat from 'dateformat';
 import axios from "axios";
 
-export default class Univer extends Component {
+export default class Course extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -34,7 +34,7 @@ export default class Univer extends Component {
                         <div className="main">
                             <div className="main-info card">
                                 <div className="avatar">
-                                    <img src={ process.env.PUBLIC_URL + '/' + this.state.university.logo} alt=""/>
+                                    <img src={education} alt=""/>
                                 </div>
                                 <div className='content'>
                                     <span className={'id'}>id: {this.state.university_id}</span>
@@ -74,45 +74,42 @@ export default class Univer extends Component {
                             <div className="card rate">
                                 <h3>Топ выпускников {this.state.university.name}</h3>
                                 <div className="users">
-                                    <a href={'/users/5d904e119b5fca3134083f8f'} className="card">
+                                    <a href={'/users/1'} className="card">
                                         <img src={avatar} alt=""/>
                                         <div className={'content'}>
-                                        <h6>Фирус Карина Михайловна</h6>
-                                        <p>Full-stack прграммист ( LobsterLab )</p>
+                                            <h6>Фирус Виктор Александрович</h6>
+                                            <p>Full-stack прграммист ( LobsterLab )</p>
                                         </div>
                                     </a>
-                                    <a href={'/users/5d904e119b5fca3134083f8f'} className="card">
+                                    <a href={'/users/1'} className="card">
                                         <img src={avatar} alt=""/>
                                         <div className={'content'}>
-                                        <h6>Фирус Карина Михайловна</h6>
-                                        <p>Full-stack прграммист ( LobsterLab )</p>
+                                            <h6>Фирус Виктор Александрович</h6>
+                                            <p>Full-stack прграммист ( LobsterLab )</p>
                                         </div>
                                     </a>
-                                    <a href={'/users/5d904e119b5fca3134083f8f'} className="card">
+                                    <a href={'/users/1'} className="card">
                                         <img src={avatar} alt=""/>
                                         <div className={'content'}>
-                                        <h6>Фирус Карина Михайловна</h6>
-                                        <p>Full-stack прграммист ( LobsterLab )</p>
+                                            <h6>Фирус Виктор Александрович</h6>
+                                            <p>Full-stack прграммист ( LobsterLab )</p>
                                         </div>
                                     </a>
-                                    <a href={'/users/5d904e119b5fca3134083f8f'} className="card">
+                                    <a href={'/users/1'} className="card">
                                         <img src={avatar} alt=""/>
                                         <div className={'content'}>
-                                        <h6>Фирус Карина Михайловна</h6>
-                                        <p>Full-stack прграммист ( LobsterLab )</p>
+                                            <h6>Фирус Виктор Александрович</h6>
+                                            <p>Full-stack прграммист ( LobsterLab )</p>
                                         </div>
                                     </a>
-                                    <a href={'/users/5d904e119b5fca3134083f8f'} className="card">
+                                    <a href={'/users/1'} className="card">
                                         <img src={avatar} alt=""/>
                                         <div className={'content'}>
-                                        <h6>Фирус Карина Михайловна</h6>
-                                        <p>Full-stack прграммист ( LobsterLab )</p>
+                                            <h6>Фирус Виктор Александрович</h6>
+                                            <p>Full-stack прграммист ( LobsterLab )</p>
                                         </div>
                                     </a>
                                 </div>
-                            </div>
-                            <div className="card rate">
-
                             </div>
                         </div>
                     </div>

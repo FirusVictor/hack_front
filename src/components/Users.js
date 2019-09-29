@@ -20,7 +20,7 @@ export default class Users extends Component {
 
     render() {
         let cards = this.state.users.map((val,key)=>{
-            return (<Link to={'/users/'+val.id} key={key} className="card user">
+            return (<Link to={'/users/'+val._id} key={key} className="card user">
                 <header>
                     <div className="avatar">
                         <img src={avatar} alt=""/>

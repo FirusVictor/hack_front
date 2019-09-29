@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Component} from 'react';
 import './App.scss';
 import Index from './components/Index'
 import Users from './components/Users'
@@ -7,22 +7,61 @@ import Univer from './components/Univer'
 import User from './components/User'
 import Companies from './components/Companies'
 import Company from './components/Company'
+import Event from './components/Event'
+import Events from './components/Events'
+import Courses from './components/Сourses'
+import Course from './components/Сourse'
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
-function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Route path="/" exact component={Index} />
-        <Route path="/users" exact component={Users} />
-        <Route path="/users/:id" component={User} />
-          <Route path="/university" exact component={Univers} />
-          <Route path="/university/:id" exact component={Univer} />
-          <Route path="/company" exact component={Companies} />
-          <Route path="/company/:id" exact component={Company} />
-      </Router>
-    </div>
-  );
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+//Убейте меня... я тупой...
+
+class App extends Component{
+  constructor(props) {
+    super(props);
+  }
+
+  render() {
+    return (
+        <div className="App">
+          <Router>
+            <Route path="/" exact component={Index} />
+            <Route path="/users" exact component={Users} />
+            <Route path="/users/:id" component={User} />
+            <Route path="/university" exact component={Univers} />
+            <Route path="/university/:id" exact component={Univer} />
+            <Route path="/company" exact component={Companies} />
+            <Route path="/company/:id" exact component={Company} />
+            <Route path="/events/" exact component={Events} />
+            <Route path="/events/:id" exact component={Event} />
+            <Route path="/courses/" exact component={Courses} />
+            <Route path="/courses/:id" exact component={Course} />
+          </Router>
+        </div>
+    );
+  }
 }
 
 export default App;

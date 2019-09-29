@@ -2,24 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="801b7d71-47b5-46b7-b3fb-585ea326b397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/edit.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/education.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/search.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Companies.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Company.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Univer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Univers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/def_avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/def_avatar.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_lobster.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_mifi.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_rsv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/graph.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Auth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Сourse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Сourses.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/logo_mail.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/logo_rsv.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Companies.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Univer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Univer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Univers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Univers.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,7 +44,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -47,9 +54,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\hack_front\public" />
       <recent name="C:\OSPanel\domains\hack_front\src\assets" />
-      <recent name="C:\OSPanel\domains\hack_front\src\components" />
       <recent name="C:\OSPanel\domains\hack_front\src\img" />
+      <recent name="C:\OSPanel\domains\hack_front\src\components" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -115,7 +123,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1569598097552</updated>
-      <workItem from="1569598106599" duration="39481000" />
+      <workItem from="1569598106599" duration="47166000" />
+      <workItem from="1569711006082" duration="19796000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1569599450247</created>
@@ -138,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569608319336</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="checkpoint">
+      <created>1569686163498</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1569686163521</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -149,7 +165,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

@@ -20,20 +20,27 @@ export default class Companies extends Component {
 
     render() {
         let cards = this.state.companies.map((val,key)=>{
-            return (<Link to={'/company/'+val.id} key={key} className="card company">
+            let vacant = val.vacant.map((v,k)=>{
+                return <p>{v}</p>;
+            });
+            return (<Link to={'/company/'+val._id} key={key} className="card company">
                 <header>
                     <div className="avatar">
-                        <img src={education} alt=""/>
+                        <img src={process.env.PUBLIC_URL + val.logo} alt=""/>
                     </div>
                     <div className="title">
                         {val.name}
                     </div>
                 </header>
+                <div className="content">
+                    <h5>Вакансии</h5>
+                    {vacant}
+                </div>
             </Link>);
         });
         return (
             <main>
-                <div className={'univers-page'}>
+                <div className={'univers-page companies'}>
                     <Header active={1}/>
                     <div className="wrapper_1080">
                         {cards}

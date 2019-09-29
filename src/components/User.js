@@ -6,7 +6,7 @@ import {Link} from "react-router-dom";
 import dateFormat from 'dateformat';
 import axios from "axios";
 
-export default class Users extends Component {
+export default class User extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -20,6 +20,7 @@ export default class Users extends Component {
         let self =this;
         axios.get('http://localhost:8000/users/'+self.state.user_id)
             .then(res=>{
+                console.log(res.data.data);
                 self.setState({user:res.data.data})
             })
 
@@ -39,7 +40,7 @@ export default class Users extends Component {
                                     <span className={'id'}>id: {this.state.user_id}</span>
                                     <h3>{this.state.user.l_name} {this.state.user.f_name} {this.state.user.m_name}</h3>
                                     <h5>Должность:</h5>
-                                    <p>full-stack разработчик ( <Link to={'/company/1'}>LobsterLab</Link> )</p>
+                                    <p>full-stack разработчик ( <Link to={'/company/5d905902d797ae33ccdb1d13'}>LobsterLab</Link> )</p>
                                     <h5>Дата рождения: </h5>
                                     <p>{dateFormat(this.state.user.birthday, "dd.mm.yyyy") }</p>
                                 </div>
@@ -54,13 +55,13 @@ export default class Users extends Component {
                                         <li>
                                             <span className='date'>2019</span>
                                             <div className="data">
-                                                full-stack программист - <Link to={'/company/1'}>LobserLab</Link>
+                                                full-stack программист - <Link to={'/company/5d905902d797ae33ccdb1d13'}>LobserLab</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <span className='date'>2017 - 2019</span>
                                             <div className="data">
-                                                Преподаватель web-программирования - <Link to={'/university/1'}>ВИТИ НИЯУ
+                                                Преподаватель web-программирования - <Link to={'/university/5d90526ad797ae33ccdb1d12'}>ВИТИ НИЯУ
                                                 МИФИ</Link>
                                             </div>
                                         </li>
@@ -77,13 +78,13 @@ export default class Users extends Component {
                                         <li>
                                             <span className='date'>2017 - 2019</span>
                                             <div className="data">
-                                                Системный анализ и управление - <Link to={'/university/1'}>ВИТИ НИЯУ МИФИ</Link>
+                                                Системный анализ и управление - <Link to={'/university/5d90526ad797ae33ccdb1d12'}>ВИТИ НИЯУ МИФИ</Link>
                                             </div>
                                         </li>
                                         <li>
                                             <span className='date'>2012 - 2016</span>
                                             <div className="data">
-                                                Информационные системы и технологии - <Link to={'/university/1'}>ВИТИ НИЯУ МИФИ</Link>
+                                                Информационные системы и технологии - <Link to={'/university/5d90526ad797ae33ccdb1d12'}>ВИТИ НИЯУ МИФИ</Link>
                                             </div>
                                         </li>
                                         <li>
@@ -96,11 +97,11 @@ export default class Users extends Component {
                                     </ul>
                                     <h4>Компетенции</h4>
                                     <div className="competitions">
-                                        <span>JSON</span>
-                                        <span>MySQL</span>
-                                        <span>PHP</span>
-                                        <span>NodeJS</span>
-                                        <span>React</span>
+                                        <span>Управление персоналом <b>7</b></span>
+                                        <span>Применение паттернов <b>12</b></span>
+                                        <span>Обработка ошибок и иcключений <b>3</b></span>
+                                        <span>Разработка UNIT-тестов <b>4</b></span>
+                                        <span>Применение пространства имен <b>7</b></span>
                                     </div>
                                 </div>
                             </div>
