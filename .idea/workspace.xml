@@ -2,31 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="801b7d71-47b5-46b7-b3fb-585ea326b397" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/logo_lobster.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo_mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo_mifi.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/logo_rsv.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/graph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Event.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Events.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Сourse.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Сourses.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo_mail.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/img/logo_rsv.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_cp.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_hack.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/logo_wsr.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Companies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Companies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Company.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Company.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Univer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Univer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Univers.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Univers.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Events.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Events.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -53,6 +34,9 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\OSPanel\domains\hack_front\public" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\OSPanel\domains\hack_front\public" />
       <recent name="C:\OSPanel\domains\hack_front\src\assets" />
@@ -124,7 +108,7 @@
       <option name="presentableId" value="Default" />
       <updated>1569598097552</updated>
       <workItem from="1569598106599" duration="47166000" />
-      <workItem from="1569711006082" duration="19796000" />
+      <workItem from="1569711006082" duration="22908000" />
     </task>
     <task id="LOCAL-00001" summary="start">
       <created>1569599450247</created>
@@ -154,7 +138,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569686163521</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="checkpoint 10.46">
+      <created>1569743236497</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1569743236497</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,6 +170,7 @@
     <MESSAGE value="start" />
     <MESSAGE value="add scss module" />
     <MESSAGE value="checkpoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="checkpoint" />
+    <MESSAGE value="checkpoint 10.46" />
+    <option name="LAST_COMMIT_MESSAGE" value="checkpoint 10.46" />
   </component>
 </project>

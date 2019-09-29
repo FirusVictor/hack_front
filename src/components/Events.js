@@ -7,34 +7,29 @@ import {Link} from "react-router-dom";
 export default class Events extends Component {
     constructor(props) {
         super(props);
-        this.state = {companies:[]}
+        this.state = {events:[]}
     }
 
     componentDidMount() {
         var self = this;
-        axios.get('http://localhost:8000/company')
+        axios.get('http://localhost:8000/events')
             .then(res => {
-                self.setState({companies:res.data.data})
+                self.setState({events:res.data.data})
             });
     }
-
     render() {
-        let cards = this.state.companies.map((val,key)=>{
-            let vacant = val.vacant.map((v,k)=>{
-                return <p>{v}</p>;
+        let cards = this.state.events.map((val,key)=>{
+            let organizations = val.organizations.map((v,k)=>{
+                return <p>{v.name}</p>;
             });
-            return (<Link to={'/company/'+val._id} key={key} className="card company">
+            return (<Link to={'/events/'+val._id} key={key} className="card company">
                 <header>
-                    <div className="avatar">
-                        <img src={education} alt=""/>
-                    </div>
-                    <div className="title">
-                        {val.name}
-                    </div>
+                    <img src={process.env.PUBLIC_URL + '/' + val.logo} alt=""/>
                 </header>
                 <div className="content">
-                    <h5>Вакансии</h5>
-                    {vacant}
+                    <h5 className={'type'}>{val.type}</h5>
+                    <h5>Организаторы</h5>
+                    {organizations}
                 </div>
             </Link>);
         });
